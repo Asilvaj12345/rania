@@ -7,8 +7,8 @@ module Top(input [2:0]ctrl,
     wire [3:0]Y1_A DD;
     wire [2:0] Y2_MIN,Y4_DIV, Y5_MOD; 
     reg [5:0] aux;
-arithmetic_operators U2 (.A(A),.B(B), .Y1_ADD(Y1_ADD), 
-.Y2_MIN(Y2_MIN), .Y3_MULT(Y3_MULT), .Y4_DIV(Y4_DIV), .Y5_MOD(Y5_MOD));
+  
+arithmetic_operators U2 (.A(A),.B(B), .Y1_ADD(Y1_ADD), .Y2_MIN(Y2_MIN), .Y3_MULT(Y3_MULT), .Y4_DIV(Y4_DIV), .Y5_MOD(Y5_MOD));
 //assign Leds = ctrl?{3'b000,Y1_ADD}:{4'b0000,Y2_MIN};
 assign Leds= aux;
 always@(*)
