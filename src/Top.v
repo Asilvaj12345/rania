@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
-module Top(ctrl, A, B, Leds)          
-           input [2:0]ctrl,
-           input [2:0]A,B, 
+module Top (ctrl, A, B, Leds)          
+           input [2:0]ctrl;
+           input [2:0]A,B; 
            output [5:0]Leds;
            
 //combo_design U1 (.A(A),.B(B),.Out(Out),.C(C));
