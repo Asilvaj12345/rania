@@ -22,6 +22,6 @@ module tt_um_project (
 
     assign uio_oe = 8'b00111111;
     assign uo_out[7:6] = 2'b00;
-    assign uio_out[7:0] 8'b00000000;   
+    assign uio_out[7:0] = 8'b00000000;   
 
 endmodule
