@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module Ejercicio2(input [2:0]ctrl,[2:0]A,B, output [5:0]Leds);
+module Top(input [2:0]ctrl,[2:0]A,B, output [5:0]Leds);
 //combo_design U1 (.A(A),.B(B),.Out(Out),.C(C));
 wire [5:0]Y3_MULT;
 wire [3:0]Y1_ADD;
